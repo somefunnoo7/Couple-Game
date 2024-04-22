@@ -4,11 +4,11 @@
 
 body {
   margin: 0;
-  background-image: linear-gradient(90deg, #f242f5, #b82549);
-  height: 100vh;
+  background: linear-gradient(#f242f5);
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 
 .main-container {
@@ -59,25 +59,31 @@ body {
 
 h1 {
   font-size: 40px;
-  color: bisque;
   font-family: Ink Free;
+  text-align: center;
+  background: linear-gradient(to left, #b82549, #f242f5);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 p {
-  color: bisque;
   font-size: 25px;
   font-family: Harrington;
+  background: linear-gradient(to left, #b82549, #f242f5);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 button {
-  background: transparent;
   border-radius: 10px;
   border: none;
-  color: bisque;
   font-size: 25px;
   font-family: Bradley Hand ITC;
   font-weight: 900;
   cursor: pointer;
+  background: linear-gradient(to left, #b82549, #f242f5);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @media only screen and (max-width: 680px) {
