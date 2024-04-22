@@ -76,7 +76,7 @@ let context = canvas.getContext("2d");
 let isDragging = false;
 
 let init = () => {
-  context.fillStyle = "bisque";
+  context.fillStyle = " #b82549";
   context.fillRect(0, 0, 300, 300);
 };
 
