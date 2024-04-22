@@ -1,0 +1,125 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#f242f5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#imageShow {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: fill;
+}
+.head-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.scratch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.scratch-card {
+  inset: 0;
+  position: absolute;
+  cursor: grabbing;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Ink Free;
+  text-align: center;
+  background: linear-gradient(to left, #b82549, #f242f5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+p {
+  font-size: 25px;
+  font-family: Harrington;
+  background: linear-gradient(to left, #b82549, #f242f5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  font-size: 25px;
+  font-family: Bradley Hand ITC;
+  font-weight: 900;
+  cursor: pointer;
+  background: linear-gradient(to left, #b82549, #f242f5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media only screen and (max-width: 680px) {
+  h1 {
+    font-size: 25px;
+  }
+  #imageShow {
+    height: 250px;
+    width: 250px;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .scratch-container {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 15px;
+  }
+  #imageShow {
+    height: 225px;
+    width: 225px;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .scratch-container {
+    height: 225px;
+    width: 225px;
+  }
+}
